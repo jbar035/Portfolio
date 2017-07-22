@@ -10,7 +10,7 @@ My Github user page is at:
 https://github.com/jbar035/
 
 My Github Pages repo can be found at:  
-https://github.com/jbar035/Portfolio
+https://github.com/jbar035
 
 And, soon, you can see my customized homepage at:
 
