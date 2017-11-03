@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Variables</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../../css/blog-post.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../../tutorials.html">Jake's Tutorials</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../../tutorials.html">Tutorials
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h1 class="mt-4">Variables</h1>
+
+        <!-- Author -->
+        <p class="lead">
+          by
+          <a href="../../index.html#resume">Jake Barnes</a>
+        </p>
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p>Posted on November 2, 2017 at 12:59 PM</p>
+
+        <hr>
+
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+
+        <hr>
+
+        <!-- Post Content -->
+        <p class="lead">This article is going to show you something called variables.</p>
+
+        <p>In Java, like other programming languages, we use data types, variables and arrays to represent various data. <br>
+          In this tutorial we shall look at something called <b>the primitive types</b>. Primitive Types are commonly refered to as simple types and can be put into four groups:
+          <br>
+          <hr>
+          <ul>
+            <li><b>Integers</b>, which are simply whole numbers, such as 1, 5, 11, 12345, -200 etc. They can be positive or negative. The four types of integer are <b>byte, short, int,</b> and <b>long.</b> </li>
+            <li><b>Floating-point numbers</b>, which represent numbers with fractional precision, i.e. decimals. The two types of floating point numbers are <b>float</b> and <b>double</b>.</li>
+            <li><b>Characters</b>, which are used to represent numbers, letters or symbols, like ‘A’, ‘j’, '6' or ‘$’. They are defined using <b>char</b>.</li>
+            <li><b>Boolean</b>, which is a special type for representing true/false values, defined using <b>boolean</b>.</li>
+          </ul>
+          A combination of these variables are used to do incredible things with computer programs.
+        </p>
+
+        <hr>
+
+        <p>
+          Just a quick note about the primitive types. Each one has a pro and con, usually being the length of bits used to represent the value. The more bits used, the more precise/larger the number can be, while using more memory.
+        </p>
+
+        <hr>
+
+        <p>
+          <b>Integers</b><br>
+          <table class="table-bordered">
+            <tr class="table">
+              <th>Name</th>
+              <th>Width (bits)</th>
+              <th>Range</th>
+            </tr>
+            <tr>
+              <td>long</td>
+              <td>64</td>
+              <td>-9,223,372,036,845,775,808 to 9,223,372,036,854,775,807</td>
+            </tr>
+            <tr>
+              <td>int</td>
+              <td>32</td>
+              <td>-2,147,483,648 to 2,147,483,647</td>
+            </tr>
+            <tr>
+              <td>short</td>
+              <td>16</td>
+              <td>-32,768 to 32,767</td>
+            </tr>
+            <tr>
+              <td>byte</td>
+              <td>8</td>
+              <td>-128 to 127</td>
+            </tr>
+          </table>
+        </p>
+
+        <hr>
+
+        <p>
+          <b>Floating-Point Types</b><br>
+          <table class="table">
+            <tr class="table">
+              <th>Name</th>
+              <th>Width (bits)</th>
+              <th>Range (Approximate)</th>
+            </tr>
+            <tr>
+              <td>double</td>
+              <td>64</td>
+              <td>4.9e-324 to 1.8e+308</td>
+            </tr>
+            <tr>
+              <td>float</td>
+              <td>32</td>
+              <td>1.4e-045 tp 3.4e+038</td>
+            </tr>
+          </table>
+        </p>
+
+        <hr>
+
+        <p>
+
+        </p>
+
+        <p>Now, lets write a basic program that outputs all of the different primitive types we've discussed.</p>
+
+        <p><b>
+          public static void main(String args[]) {<br>
+          int intExample = 1;<br>
+          byte byteExample = 7;<br>
+          short shortExample = -100;<br>
+          long longExample = -999934567<br>
+          double dblExample = 1.5;<br>
+          float fltExample = 2.3f;<br>
+          boolean boolExample = true;<br>
+          Char charExample = ‘A’;<br>
+          <br>
+          System.out.println(intExample);<br>
+          System.out.println(byteExample);<br>
+          System.out.println(shortExample);<br>
+          System.out.println(longExample);<br>
+          System.out.println(dblExample);<br>
+          System.out.println(fltExample);<br>
+          System.out.println(boolExample);<br>
+          System.out.println(charExample);<br>
+        }<br>
+      </b></p>
+
+      <hr>
+
+      <p>
+        We have created some variables of different types and then printed them to the console using the method we saw before - System.out.println(). Also note the 'f' after the number in the float example, which is used to denote a floating point number.  If we run this program, on the terminal output we will see:<br>
+
+        <!-- add picture of output -->
+        <img src="../../images/VariablesConsoleOutput.PNG">
+      </p>
+
+
+      <hr>
+
+      <p>
+        So, what have we done in these 16 lines of code? <br>
+        In the first half, we have created variables with different types and names, and assigned them values. <br>
+        In the second half, we have outputted the variables using the println() method.<br>
+
+      </p>
+
+      <hr>
+
+      <p>
+        <b>Recap</b><br>
+        So to conclude, variables are used in programming to represent different types of data. It is important that you learn about all of the types, and also that you gain an understanding of where and when to use them.
+      </p>
+
+      <hr>
+
+    </div>
+
+    <!-- Sidebar Widgets Column -->
+    <div class="col-md-4">
+
+      <!-- Categories Widget -->
+      <div class="card my-4">
+        <h5 class="card-header">Categories</h5>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-6">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="javaBeginnerContent.html">Java Beginner</a>
+                </li>
+                <li>
+                  <a href="javaLevels.html">Java Tutorials</a>
+                </li>
+                <li>
+                  <a href="#">Resources</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#">Networking</a>
+                </li>
+                <li>
+                  <a href="#">Web Development</a>
+                </li>
+                <li>
+                  <a href="../../tutorials.html">Tutorials</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Side Widget -->
+      <div class="card my-4">
+        <h5 class="card-header">Contact</h5>
+        <div class="card-body">
+          If you have any questions feel free to email me using the contact form: <a href="../../index.html#contact">Contact Me</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">JakeBarnes 2017</p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/popper/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

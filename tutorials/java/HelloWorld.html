@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hello World!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/blog-post.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="../../tutorials.html">Jake's Tutorials</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home
+                
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="../../tutorials.html">Tutorials
+              <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">About</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+          <!-- Title -->
+          <h1 class="mt-4">Hello World!</h1>
+
+          <!-- Author -->
+          <p class="lead">
+            by
+            <a href="../../index.html#resume">Jake Barnes</a>
+          </p>
+
+          <hr>
+
+          <!-- Date/Time -->
+          <p>Posted on November 2, 2017 at 12:04 PM</p>
+
+          <hr>
+
+          <!-- Preview Image -->
+          <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+
+          <hr>
+
+          <!-- Post Content -->
+          <p class="lead">This article is going to show you how to write your very first Java program. We are simply going to output the phrase “Hello World!” to the console line.</p>
+
+          <p>Firstly you'll need to open up your favourite IDE (I'll be using Intellij for these tutorials) and create a new project. Then in your java class you'll need to type out:</p>
+
+          <hr>
+          <p>
+            <b>public static void main(String args[]) { <br>
+              System.out.println(“Hello World!”); <br>
+            }
+            </b>
+          </p>
+          <hr>
+          
+          <p>Now, lets quickly break down what each line does.</p>
+
+          <!-- <blockquote class="blockquote">
+            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">Someone famous in
+              <cite title="Source Title">Source Title</cite>
+            </footer>
+          </blockquote> -->
+
+          <p>
+            <b>public static void main(String args[])</b><br>
+              This line will be present in every single Java program you write. It is the main method of the application indicated by the word “main” and there can only be one main method in an application. It indicates where the program should start. there are also some other words in this line such as public, static, void and the words in the parenthesis, but for now we aren’t going to worry about this as it isn’t essential for you to understand right now.
+          </p>
+
+          <p><b>System.out.println(“Hello World!”);</b><br>
+              This line uses a method called println() to print content to the command line. We have passed in something called a string with the value “Hello World!”;</p>
+
+          <p>
+            If we compile and run this program, we get:<br>
+
+            <image src="../../images/HelloWorldConsoleOutput.PNG">
+            <!-- add picture of output -->
+          </p>
+
+          <hr>
+          <p>
+            Congratulations! You just wrote your very first, albeit simple, Java program.
+          </p>
+
+          <hr>
+
+          </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+          <!-- Categories Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Categories</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="javaBeginnerContent.html">Java Beginner</a>
+                    </li>
+                    <li>
+                      <a href="javaLevels.html">Java Tutorials</a>
+                    </li>
+                    <li>
+                      <a href="#">Resources</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">Networking</a>
+                    </li>
+                    <li>
+                      <a href="#">Web Development</a>
+                    </li>
+                    <li>
+                      <a href="../../tutorials.html">Tutorials</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Side Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Contact</h5>
+            <div class="card-body">
+              If you have any questions feel free to email me using the contact form: <a href="../../index.html#contact">Contact Me</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">JakeBarnes 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
