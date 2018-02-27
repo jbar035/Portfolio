@@ -2,9 +2,10 @@
 jbar035.github.io
 ====================
 
-## Hello world!
+Welcome!
 
-This is my first try at github!
+This is my personal github, where I am hosting my own personal static website.
+Feel free to contact me via email using the form on the personal part of my website (not the tutorials).
 
 My Github user page is at: 
 https://github.com/jbar035/
@@ -12,6 +13,5 @@ https://github.com/jbar035/
 My Github Pages repo can be found at:  
 https://github.com/jbar035
 
-And, soon, you can see my customized homepage at:
-
+And, you can see my customized homepage at:
 http://jbar035.github.io/
