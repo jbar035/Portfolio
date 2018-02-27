@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Github</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../../css/blog-post.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../../tutorials.html">Jake's Tutorials</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../../tutorials.html">Tutorials
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h1 class="mt-4">Github</h1>
+
+        <!-- Author -->
+        <p class="lead">
+          by
+          <a href="../../index.html#resume">Jake Barnes</a>
+        </p>
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p>Posted on February 27th, 2018 at 14:46 PM</p>
+
+        <hr>
+
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+
+        <hr>
+
+        <!-- Post Content -->
+        <p class="lead">This tutorial is just a brief overview of Github and will include some essential commands.</p>
+        <p>Github is an incredibly useful tool for developers, but can be utilised by almost anyone.
+          <br>
+        <p>If you want to know more, search online - there's tons of great material.</p>
+
+        <hr>
+        <p><b>git clone link_from_Github</b><br>
+        This command is used for cloning a repository from Github to your local
+        machine. The link is one copied from a repo, in the green box that says
+        clone or download.<br>
+        It's worth while mentioning now that there are actually a few ways of
+        getting the code from the Github website to your local machine. These are:
+        <ul>
+          <li>Downloading the zip file. This is probably the easiest way, you
+          simply download a .zip from Github containing all the files in the
+          repository. It is however perhaps the least elegant way of utilising
+          Github's functionality.</li>
+          <li>Cloning using HTTP. This simply uses the Hyper Text Transfer
+            Protocol to transfer the data from Github.com to your computer.</li>
+          <li>Cloning using SSH. This uses the SSH protocol to transfer the data
+            to your local machine, you'll need to set up an SSH key to use this.
+             Tutorial on how to do so can be found here.(link to ssh tutorial)</li>
+        </ul>
+        </p>
+        <p>
+        <b>git remote -v</b><br>
+        This command tells you where the repository on your local machine will fetch (get updates) from and push (update the repo on Github) to.
+        </p>
+        <p>
+        <b>git remote other stuff</b><br>
+        This command is useful for stating where the code you're working on links to on Github
+        </p>
+        <p>
+        <b>git pull</b><br>
+        This command is used for getting the most up to date code from the repository on Github to your local machine.
+        </p>
+        <p>
+        <b>git branch</b><br>
+        This command shows you what branch you are working on and what other branches are on your local machine.
+        </p>
+        <p>
+        <b>git branch nameOfBranch</b><br>
+        This command switches to a new branch, it's good practice because you don't want to be making changes directly to the master.
+        </p>
+        <p>
+        <b>git checkout -b nameOfBranch</b><br>
+        This command checks out a the branch stated, it allows you to start working on a branch that is not the master.
+        </p>
+        <p>
+        <b>git status</b><br>
+        This command tells you what files have been modified, i.e. what files on your machine are different to the master branch.
+        </p>
+        <p>
+        <b>git add .</b><br>
+        This command adds all of the changes to files that have been made. You can be more specific by using: git add "nameOfFileYouWantToAdd"
+        </p>
+        <p>
+        <b>git commit -m "Message to accompany the commit"</b><br>
+        This command essentially prepares the work done to be pushed to the branch of your choice. You don't have to use the -m flag accompanied by the message wrapped in "", but it's a very good habit to have. It lets others (and yourself) know what changes were made, in a short concise sentence. It can save you from trawling through the code to find out.
+        </p>
+        <p>
+        <b>git reset --hard HEAD^</b><br>
+        This command removes the commit you've just made.
+        </p>
+        <p>
+        <b>git reset --hard HEAD~x</b><br>
+        Where x is the number of commits you want to remove (integer, i.e. 2, 3, 4 etc.)
+        </p>
+        <hr>
+        <p>
+        <b>Example</b><br>
+        This is a quick example of how I use some of these git commands when working on a repository with colleagues.<br>
+        Start by getting the repo onto my own machine:<br>
+         - git clone "repo link from Github"<br>
+        Now the code is on my machine.<br>
+         - git branch TESTBRANCH<br>
+        Make some changes to the code. Check which files need to be committed/pushed.<br>
+         - git status<br>
+         - git add .<br>
+         - git commit -m "Brief explanation of what has been added"<br>
+         - git push -u origin TESTBRANCH<br>
+         Now the code is pushed to Github, you can raise a pull request which is the chance for someone else to double check your changes, if they are happy they can merge it. This combines your code with the master branch.
+         </p>
+
+
+        <hr>
+
+
+
+        <hr>
+
+
+
+        <hr>
+
+
+
+
+      <hr>
+
+
+
+
+      <hr>
+
+
+
+      <hr>
+
+
+
+      <hr>
+
+    </div>
+
+    <!-- Sidebar Widgets Column -->
+    <div class="col-md-4">
+
+      <!-- Categories Widget -->
+
+      <div class="card my-4">
+        <h5 class="card-header">Quick links</h5>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-6">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="javaBeginnerContent.html">Java Beginner</a>
+                </li>
+                <li>
+                  <a href="javaLevels.html">Java Tutorials</a>
+                </li>
+                <li>
+                  <a href="#">Resources</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#">Networking</a>
+                </li>
+                <li>
+                  <a href="#">Web Development</a>
+                </li>
+                <li>
+                  <a href="../../tutorials.html">Tutorials</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Side Widget -->
+      <div class="card my-4">
+        <h5 class="card-header">Contact</h5>
+        <div class="card-body">
+          If you have any questions feel free to email me using the contact form: <a href="../../index.html#contact">Contact Me</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">JakeBarnes 2017</p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/popper/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
