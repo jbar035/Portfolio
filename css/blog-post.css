@@ -6,6 +6,8 @@
 
 body {
     padding-top: 54px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 
 @media (min-width: 992px) {
@@ -17,4 +19,10 @@ body {
 .col-md-4 {
   position: fixed;
   right: 0;
+}
+
+#top-img-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
