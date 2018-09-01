@@ -65,22 +65,16 @@
         <p>Posted on February 27th, 2018 at 14:46 PM</p>
 
         <hr>
-
-        <!-- Preview Image -->
-        <img class="img-fluid rounded" id="top-img-center" src="http://placehold.it/900x300" alt="">
-
-        <hr>
-
         <!-- Post Content -->
 
         <p class="lead">This post contains a brief overview of Github and will include some essential Git commands.</p>
-        <p>Github/Git is an incredibly useful tool for developers, but can be utilised by almost anyone.
-          <br>
-          <p>If you want to know more, search online - there's tons of great material.</p>
-
+        <p>Github/Git is an incredibly useful tool for developers, but can be utilised by almost anyone.</p>
+        <p>If you want to know more, search online - there's tons of great material.</p>
+        <p>There are two parts to this tutorial, <a href="#gitCommandsContent">Commands</a> and <a href="#gitExampleContent">Creating a repo from an existing project</a>.
           <hr>
           <div id="gitCommandsContent">
-            <p>Some userful Git commands</p>
+            <br><br>
+            <h5>Some userful Git commands:</h5>
             <p><b>git clone link_from_Github</b><br>
         This command is used for cloning a repository from Github to your local
         machine. The link is one copied from a repo, in the green box that says
@@ -102,123 +96,51 @@
             <p>
               <b>git remote -v</b><br>
         This command tells you where the repository on your local machine will fetch (get updates) from and push (update the repo on Github) to.
-
-
-
-
-
-
-
         </p>
             <p>
               <b>git remote other stuff</b><br>
         This command is useful for stating where the code you're working on links to on Github
-
-
-
-
-
-
-
         </p>
-            <p>
-              <b>git pull</b><br>
+        <p>
+          <b>git pull</b><br>
         This command is used for getting the most up to date code from the repository on Github to your local machine.
-
-
-
-
-
-
-
         </p>
             <p>
               <b>git branch</b><br>
         This command shows you what branch you are working on and what other branches are on your local machine.
-
-
-
-
-
-
-
         </p>
             <p>
               <b>git branch nameOfBranch</b><br>
         This command switches to a new branch, it's good practice because you don't want to be making changes directly to the master.
 
-
-
-
-
-
-
         </p>
             <p>
               <b>git checkout -b nameOfBranch</b><br>
         This command checks out a the branch stated, it allows you to start working on a branch that is not the master.
-
-
-
-
-
-
-
         </p>
             <p>
               <b>git status</b><br>
-        This command tells you what files have been modified, i.e. what files on your machine are different to the master branch.
-
-
-
-
-
-
-
+        This command tells you what files have been modified,
+        i.e. what files on your machine are different to the master branch.
         </p>
             <p>
               <b>git add .</b><br>
-        This command adds all of the changes to files that have been made. You can be more specific by using: git add "nameOfFileYouWantToAdd"
-
-
-
-
-
-
-
+        This command adds all of the changes to files that have been made.
+        You can be more specific by using: git add "nameOfFileYouWantToAdd"
         </p>
             <p>
               <b>git commit -m "Message to accompany the commit"</b><br>
-        This command essentially prepares the work done to be pushed to the branch of your choice. You don't have to use the -m flag accompanied by the message wrapped in "", but it's a very good habit to have. It lets others (and yourself) know what changes were made, in a short concise sentence. It can save you from trawling through the code to find out.
-
-
-
-
-
-
-
+        This command essentially prepares the work done to be pushed to the branch of your choice.
+        You don't have to use the -m flag accompanied by the message wrapped in "", but it's a very good habit to have.
+        It lets others (and yourself) know what changes were made, in a short concise sentence. It can save you from trawling through the code to find out.
         </p>
             <p>
               <b>git reset --hard HEAD^</b><br>
         This command removes the commit you've just made.
-
-
-
-
-
-
-
         </p>
             <p>
               <b>git reset --hard HEAD~x</b><br>
         Where x is the number of commits you want to remove (integer, i.e. 2, 3, 4 etc.)
-
-
-
-
-
-
-
         </p>
             <hr>
             <p>
@@ -234,12 +156,12 @@
          - git commit -m "Brief explanation of what has been added"<br>
          - git push -u origin TESTBRANCH<br>
          Now the code is pushed to Github, you can raise a pull request which is the chance for someone else to double check your changes, if they are happy they can merge it. This combines your code with the master branch.
-
-         </p>
+        </p>
           </div>
-          <hr>
-
-          <div id="gitExampleContent">
+          <hr id="gitExampleContent">
+          <br><br>
+          <div>
+            <h5>Creating a Git repo from an existing project:</h5>
             <p>An example of setting up a Github repo from an existing project on Linux/Mac using the terminal.</p>
             <p>Prerequisites:
               <ul>
@@ -265,8 +187,6 @@
             </code></pre>
               Now if you check the repo on Github, the helloWorld.txt file will be in your repo.
             </p>
-
-
           </div>
           <hr>
           <p>Check out <a href="https://github.com/">Github</a>, it's awesome!</p>
